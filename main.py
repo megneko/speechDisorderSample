@@ -8,7 +8,7 @@ import os
 app = FastAPI()
 
 # Whisperモデルをロード（"base" で軽量。必要に応じて tiny/base/small/medium/large）
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 
 @app.post("/transcribe")
